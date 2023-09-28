@@ -11,7 +11,7 @@ import SwiftUI
 struct SupabaseAuthApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView()
         }
     }
 }

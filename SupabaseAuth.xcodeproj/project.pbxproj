@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32CB3B02AC5384800E35815 /* SwiftDotEnv in Frameworks */ = {isa = PBXBuildFile; productRef = E32CB3AF2AC5384800E35815 /* SwiftDotEnv */; };
+		E32CB3B22AC5392200E35815 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B12AC5392200E35815 /* Environment.swift */; };
+		E32CB3B42AC53B7E00E35815 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B32AC53B7E00E35815 /* AppUser.swift */; };
+		E32CB3B62AC53E1500E35815 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B52AC53E1500E35815 /* HomeView.swift */; };
+		E34E2E9D2AC50853009BD7EC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2E9C2AC50853009BD7EC /* SignInView.swift */; };
+		E34E2E9F2AC50878009BD7EC /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */; };
+		E34E2EA12AC5091D009BD7EC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2EA02AC5091D009BD7EC /* AuthManager.swift */; };
+		E34E2EA32AC50BF8009BD7EC /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2EA22AC50BF8009BD7EC /* SignInApple.swift */; };
 		E3A602CC2AC4FB390074482E /* SupabaseAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A602CB2AC4FB390074482E /* SupabaseAuthApp.swift */; };
 		E3A602CE2AC4FB390074482E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A602CD2AC4FB390074482E /* ContentView.swift */; };
 		E3A602D02AC4FB3B0074482E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A602CF2AC4FB3B0074482E /* Assets.xcassets */; };
 		E3A602D32AC4FB3B0074482E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A602D22AC4FB3B0074482E /* Preview Assets.xcassets */; };
+		E3A602DB2AC506170074482E /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = E3A602DA2AC506170074482E /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32CB3AD2AC51BB400E35815 /* SupabaseAuth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SupabaseAuth.entitlements; sourceTree = "<group>"; };
+		E32CB3B12AC5392200E35815 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		E32CB3B32AC53B7E00E35815 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		E32CB3B52AC53E1500E35815 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E34E2E9C2AC50853009BD7EC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		E34E2EA02AC5091D009BD7EC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E34E2EA22AC50BF8009BD7EC /* SignInApple.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; tabWidth = 2; };
 		E3A602C82AC4FB390074482E /* SupabaseAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupabaseAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A602CB2AC4FB390074482E /* SupabaseAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseAuthApp.swift; sourceTree = "<group>"; };
 		E3A602CD2AC4FB390074482E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32CB3B02AC5384800E35815 /* SwiftDotEnv in Frameworks */,
+				E3A602DB2AC506170074482E /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +57,9 @@
 				E3A602CA2AC4FB390074482E /* SupabaseAuth */,
 				E3A602C92AC4FB390074482E /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		E3A602C92AC4FB390074482E /* Products */ = {
 			isa = PBXGroup;
@@ -51,10 +72,18 @@
 		E3A602CA2AC4FB390074482E /* SupabaseAuth */ = {
 			isa = PBXGroup;
 			children = (
+				E32CB3AD2AC51BB400E35815 /* SupabaseAuth.entitlements */,
 				E3A602CB2AC4FB390074482E /* SupabaseAuthApp.swift */,
 				E3A602CD2AC4FB390074482E /* ContentView.swift */,
 				E3A602CF2AC4FB3B0074482E /* Assets.xcassets */,
 				E3A602D12AC4FB3B0074482E /* Preview Content */,
+				E34E2E9C2AC50853009BD7EC /* SignInView.swift */,
+				E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */,
+				E34E2EA02AC5091D009BD7EC /* AuthManager.swift */,
+				E34E2EA22AC50BF8009BD7EC /* SignInApple.swift */,
+				E32CB3B12AC5392200E35815 /* Environment.swift */,
+				E32CB3B32AC53B7E00E35815 /* AppUser.swift */,
+				E32CB3B52AC53E1500E35815 /* HomeView.swift */,
 			);
 			path = SupabaseAuth;
 			sourceTree = "<group>";
@@ -83,6 +112,10 @@
 			dependencies = (
 			);
 			name = SupabaseAuth;
+			packageProductDependencies = (
+				E3A602DA2AC506170074482E /* Supabase */,
+				E32CB3AF2AC5384800E35815 /* SwiftDotEnv */,
+			);
 			productName = SupabaseAuth;
 			productReference = E3A602C82AC4FB390074482E /* SupabaseAuth.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,10 @@
 				Base,
 			);
 			mainGroup = E3A602BF2AC4FB390074482E;
+			packageReferences = (
+				E3A602D92AC506170074482E /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				E32CB3AE2AC5384800E35815 /* XCRemoteSwiftPackageReference "SwiftDotEnv" */,
+			);
 			productRefGroup = E3A602C92AC4FB390074482E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32CB3B62AC53E1500E35815 /* HomeView.swift in Sources */,
+				E32CB3B42AC53B7E00E35815 /* AppUser.swift in Sources */,
+				E34E2E9F2AC50878009BD7EC /* SignInViewModel.swift in Sources */,
+				E34E2E9D2AC50853009BD7EC /* SignInView.swift in Sources */,
 				E3A602CE2AC4FB390074482E /* ContentView.swift in Sources */,
+				E32CB3B22AC5392200E35815 /* Environment.swift in Sources */,
 				E3A602CC2AC4FB390074482E /* SupabaseAuthApp.swift in Sources */,
+				E34E2EA32AC50BF8009BD7EC /* SignInApple.swift in Sources */,
+				E34E2EA12AC5091D009BD7EC /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupabaseAuth/SupabaseAuth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupabaseAuth/Preview Content\"";
@@ -293,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupabaseAuth/SupabaseAuth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SupabaseAuth/Preview Content\"";
@@ -339,6 +385,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E32CB3AE2AC5384800E35815 /* XCRemoteSwiftPackageReference "SwiftDotEnv" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftOnTheServer/SwiftDotEnv.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		E3A602D92AC506170074482E /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E32CB3AF2AC5384800E35815 /* SwiftDotEnv */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E32CB3AE2AC5384800E35815 /* XCRemoteSwiftPackageReference "SwiftDotEnv" */;
+			productName = SwiftDotEnv;
+		};
+		E3A602DA2AC506170074482E /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3A602D92AC506170074482E /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3A602C02AC4FB390074482E /* Project object */;
 }
