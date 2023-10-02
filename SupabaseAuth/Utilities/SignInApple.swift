@@ -9,11 +9,6 @@ import Foundation
 import CryptoKit
 import AuthenticationServices
 
-struct SignInAppleResult {
-  let idToken: String
-  let nonce: String
-}
-
 class SignInApple: NSObject {
   private var currentNonce: String?
   private var completionHandler: ((Result<SignInAppleResult, Error>) -> Void)?

@@ -11,6 +11,7 @@
 		E32CB3B22AC5392200E35815 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B12AC5392200E35815 /* Environment.swift */; };
 		E32CB3B42AC53B7E00E35815 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B32AC53B7E00E35815 /* AppUser.swift */; };
 		E32CB3B62AC53E1500E35815 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3B52AC53E1500E35815 /* HomeView.swift */; };
+		E32CB3BC2ACB85FC00E35815 /* SignInAppleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32CB3BB2ACB85FC00E35815 /* SignInAppleResult.swift */; };
 		E34E2E9D2AC50853009BD7EC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2E9C2AC50853009BD7EC /* SignInView.swift */; };
 		E34E2E9F2AC50878009BD7EC /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */; };
 		E34E2EA12AC5091D009BD7EC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34E2EA02AC5091D009BD7EC /* AuthManager.swift */; };
@@ -27,6 +28,7 @@
 		E32CB3B12AC5392200E35815 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E32CB3B32AC53B7E00E35815 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		E32CB3B52AC53E1500E35815 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E32CB3BB2ACB85FC00E35815 /* SignInAppleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleResult.swift; sourceTree = "<group>"; };
 		E34E2E9C2AC50853009BD7EC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		E34E2EA02AC5091D009BD7EC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -51,6 +53,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32CB3B72ACB85A900E35815 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E32CB3B52AC53E1500E35815 /* HomeView.swift */,
+				E34E2E9C2AC50853009BD7EC /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E32CB3B82ACB85B300E35815 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E32CB3B92ACB85C000E35815 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E32CB3B32AC53B7E00E35815 /* AppUser.swift */,
+				E32CB3BB2ACB85FC00E35815 /* SignInAppleResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E32CB3BA2ACB85CD00E35815 /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				E3A602CB2AC4FB390074482E /* SupabaseAuthApp.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		E32CB3BD2ACB863100E35815 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E34E2EA22AC50BF8009BD7EC /* SignInApple.swift */,
+				E34E2EA02AC5091D009BD7EC /* AuthManager.swift */,
+				E32CB3B12AC5392200E35815 /* Environment.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		E3A602BF2AC4FB390074482E = {
 			isa = PBXGroup;
 			children = (
@@ -72,18 +118,15 @@
 		E3A602CA2AC4FB390074482E /* SupabaseAuth */ = {
 			isa = PBXGroup;
 			children = (
+				E32CB3BD2ACB863100E35815 /* Utilities */,
+				E32CB3BA2ACB85CD00E35815 /* Lifecycle */,
+				E32CB3B92ACB85C000E35815 /* Models */,
+				E32CB3B82ACB85B300E35815 /* ViewModels */,
+				E32CB3B72ACB85A900E35815 /* Views */,
 				E32CB3AD2AC51BB400E35815 /* SupabaseAuth.entitlements */,
-				E3A602CB2AC4FB390074482E /* SupabaseAuthApp.swift */,
 				E3A602CD2AC4FB390074482E /* ContentView.swift */,
 				E3A602CF2AC4FB3B0074482E /* Assets.xcassets */,
 				E3A602D12AC4FB3B0074482E /* Preview Content */,
-				E34E2E9C2AC50853009BD7EC /* SignInView.swift */,
-				E34E2E9E2AC50878009BD7EC /* SignInViewModel.swift */,
-				E34E2EA02AC5091D009BD7EC /* AuthManager.swift */,
-				E34E2EA22AC50BF8009BD7EC /* SignInApple.swift */,
-				E32CB3B12AC5392200E35815 /* Environment.swift */,
-				E32CB3B32AC53B7E00E35815 /* AppUser.swift */,
-				E32CB3B52AC53E1500E35815 /* HomeView.swift */,
 			);
 			path = SupabaseAuth;
 			sourceTree = "<group>";
@@ -179,6 +222,7 @@
 				E34E2E9F2AC50878009BD7EC /* SignInViewModel.swift in Sources */,
 				E34E2E9D2AC50853009BD7EC /* SignInView.swift in Sources */,
 				E3A602CE2AC4FB390074482E /* ContentView.swift in Sources */,
+				E32CB3BC2ACB85FC00E35815 /* SignInAppleResult.swift in Sources */,
 				E32CB3B22AC5392200E35815 /* Environment.swift in Sources */,
 				E3A602CC2AC4FB390074482E /* SupabaseAuthApp.swift in Sources */,
 				E34E2EA32AC50BF8009BD7EC /* SignInApple.swift in Sources */,
